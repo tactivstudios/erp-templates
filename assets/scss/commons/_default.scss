@@ -1,0 +1,38 @@
+
+:root{
+  --line-clamp: 1;
+}
+
+body {
+  * {
+      font-family: $F1-Regular;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      letter-spacing: $letter-spacing-Regular;
+      font-size: $normal;
+      padding: 0;
+      margin: 0;
+  }
+  overflow-y: scroll;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+img{
+  object-fit: cover;
+}
+
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

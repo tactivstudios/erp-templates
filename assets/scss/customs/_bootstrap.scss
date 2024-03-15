@@ -1,0 +1,112 @@
+/* Quickly customize Bootstrap with built-in variables to
+ * easily toggle global CSS preferences for controlling
+ * style and behavior.
+ * https://getbootstrap.com/docs/5.0/customize/options/
+ */
+
+// Over-ride bootstrap theme colors
+// https://getbootstrap.com/docs/5.0/customize/color/#all-colors
+$theme-colors: (
+    "primary": $primary,
+    "light": $white,
+    "dark": $black,
+);
+
+
+$utilities: map-merge($utilities,
+    ("rounded": map-merge(map-get($utilities, "rounded"),
+        (values: map-merge(map-get(map-get($utilities, "rounded"), "values"),
+                (
+                    'circle': $border-radius-pill,
+                    '4': $radius-xs,
+                    '8': $radius-sm,
+                    '12': $radius-normal,
+                    '16': $radius-md,
+                    '24': $radius-lg,
+                ),
+            ),
+        ),
+    ),
+    "border-color": map-merge(map-get($utilities, "border-color"),
+        (values: map-merge(map-get(map-get($utilities, "border-color"), "values"),
+                ( 
+                    'gray': $erp-gray-400,
+                ),
+            ),
+        ),
+    ),
+    "color": map-merge(map-get($utilities, "color"),
+        (values: map-merge(map-get(map-get($utilities, "color"), "values"),
+                (
+                    'error-500': $error-500,
+                ),
+            ),
+        ),
+    ),
+    "background-color": map-merge(map-get($utilities, "background-color"),
+        (values: map-merge(map-get(map-get($utilities, "background-color"), "values"),
+                (
+                    'light': $white,
+                    'dark': $black,
+
+                    'primary-100': $primary-100,
+                    'primary-600': $primary-600,
+                    
+                    'gray-100': $erp-gray-100,
+
+                    'error-100': $error-100,
+
+                    'warning-100': $warning-100,
+
+                    'success-100': $success-100,
+                ),
+            ),
+        ),
+    ),
+    "cursor": (
+        class: c,
+        property: cursor,
+        values: (
+            "pointer": pointer,
+            "default": default
+        )
+    ),
+    "width": map-merge(
+        map-get($utilities, "width"),
+        (
+            values: map-merge(
+            map-get(map-get($utilities, "width"), "values"),
+            (
+                unset: unset,
+                0: 0,
+                'fit': fit-content,
+                '50': '50%',
+            ),
+            ),
+        ),
+    ),
+    "max-width": map-merge(
+        map-get($utilities, "max-width"),
+        (
+            values: map-merge(
+            map-get(map-get($utilities, "max-width"), "values"),
+            (
+                unset: unset,
+            ),
+            ),
+        ),
+    ),
+    "height": map-merge(
+        map-get($utilities, "height"),
+        (
+            values: map-merge(
+            map-get(map-get($utilities, "height"), "values"),
+            (
+                unset: unset,
+                0: 0,
+                'fit': fit-content,
+            ),
+            ),
+        ),
+    ),
+));

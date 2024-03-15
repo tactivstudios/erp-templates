@@ -1,0 +1,14 @@
+html, body {
+    min-height: 100vh;
+}
+body {
+    * {
+        color: var(--bs-body-color);
+    }
+    display: flex;
+    flex-direction: column;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
