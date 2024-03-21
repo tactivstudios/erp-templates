@@ -55,6 +55,7 @@ $warning-700: var(--warning-700);
 $success-50 : var(--success-50);
 $success-100: var(--success-100);
 $success-200: var(--success-200);
+$success-300: var(--success-300);
 $success-400: var(--success-400);
 $success-500: var(--success-500);
 $success-600: var(--success-600);
@@ -62,6 +63,9 @@ $success-700: var(--success-700);
 
 $gray-iron-100: var(--gray-iron-100);
 $gray-iron-800: var(--gray-iron-800);
+
+$skyblue: var(--skyblue);
+$pink-400: var(--pink-400);
 
 /* FONT SIZES
  * We should strictly follow the declared font sizes and should
@@ -126,3 +130,4 @@ $focus-ring-primary: 0px 0px 0px 2px #202A17;
 $shadow-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 $shadow-md: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
 $shadow-lg: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+$shadow-vg: 0px 2px 4px rgba(0, 0, 0, 0.2);

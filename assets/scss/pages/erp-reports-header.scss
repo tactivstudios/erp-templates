@@ -1,0 +1,35 @@
+.body{
+  font-family: $InterFont;
+}
+
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+  border-bottom-width: $border-width;
+  border-bottom-style: $border-style;
+  border-color: $erp-gray-200;
+
+  .cohesion-icon{
+      width: 190.07;
+      height: 33.72;
+      margin-right: 30px;
+  }
+
+  .home-text,
+  .projects-text,
+  .calendar-text{
+      margin-right: 13px;
+  }
+
+  .settings-icon,
+  .notification-icon,
+  .user-icon{
+      margin-right: 15px;
+  }
+
+
+}

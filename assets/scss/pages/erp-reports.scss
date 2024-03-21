@@ -1,0 +1,303 @@
+.reports-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcfcfd;
+  padding-top: 50px;
+
+  .span-lg{
+      font-size: $h4;
+      font-weight: $F1-SemiBold;
+  }
+
+  .reports-left-side,
+  .reports-right-side{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .avatars-icon{
+      margin-right: 10px;
+  }
+
+  .filter-icon,
+  .print-icon{
+      margin-right: 5px;
+  }
+
+  .download-button{
+      border: none;
+      border-radius: 8px;
+      padding: 11px 11px 11px 11px;
+      background-color: $primary-600;
+      color: $white;
+  }
+
+  .download-icon{
+      padding-left: 5px;
+  }
+}
+
+.card-container{
+  background-color: $white;
+  height: 100%;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: $shadow-vg;
+
+  .this-week-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .hrs-right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .circle-color-purple{
+      height: 8px;
+      width: 8px;
+      background-color: $primary-600;
+      border-radius: 50%;
+  }
+
+  .circle-color-skyblue{
+      height: 8px;
+      width: 8px;
+      background-color: $skyblue;
+      border-radius: 50%;
+  }
+
+  .circle-color-purple,
+  .circle-color-skyblue{
+      margin-right: 8px;
+  }
+
+  .span-xg,
+  .span-vg{
+      margin-right: 15px;
+      color: #a8adb9;
+  }
+
+  .week-left{
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+  }
+
+  .span-ag{
+    font-size: $h6-2;
+  }
+
+  .hrs-right{
+      margin-top: 15px;
+      margin-right: 20px;
+  }
+}
+
+.list-container{
+  display: flex;
+  margin-top: 8px;
+
+  .custom-table{
+    width: 100%;
+  }
+  
+  .table-head{
+    background-color: #f9fafb;
+  }
+
+  .top-table,
+  .table-top-left-border-none{
+    padding-top: 25px;
+  }
+
+  .table-body-borders{
+    padding-top: 12px;
+  }
+
+  .top-table,
+  .table-body-borders{
+    border-bottom-width: $border-width;
+    border-bottom-style: $border-style;
+    border-left-width: $border-width;
+    border-left-style: $border-style;
+    border-color: $erp-gray-200;
+  }
+
+  .table-top-left-border-none,
+  .table-body-left-border-none{
+    border-bottom-width: $border-width;
+    border-bottom-style: $border-style;
+    border-color: $erp-gray-200;
+  }
+
+  .table-padding-left{
+    padding-left: 20px;
+  }
+
+  .top-table-assignee{
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .assignee,
+  .task,
+  .hours,
+  .status,
+  .client{
+    font-size: $small-2;
+    color: $erp-gray-500;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .assignee{
+    width: 15%;
+    padding-left: 20px;
+  }
+
+  .task{
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  .hours{
+    width: 10%;
+  }
+
+  .status{
+    width: 10%;
+  }
+
+  .client{
+    padding-left: 5px;
+    width: 10%;
+  }
+
+  .table-body{
+    border-top-width: $border-width;
+    border-top-style: $border-style;
+    border-color: $erp-gray-200;
+  }
+
+  .task-second-text-small{
+    color: $erp-gray-600;
+  }
+
+  .task-second-text-small,
+  .span-link,
+  .span-link-underline{
+    font-size: $small-2;
+  }
+
+  .span-link,
+  .span-link-underline{
+    color: $primary;
+  }
+
+  .span-link-underline{
+    text-decoration: underline;
+  }
+
+  .span-4hrs,
+  .span-done,
+  .span-in-progress,
+  .span-staged-testing,
+  .span-for-review{
+    padding: 4px 8px 4px 8px;
+  }
+
+  .span-done,
+  .span-in-progress,
+  .span-staged-testing,
+  .span-for-review{
+    border-radius: 8px;
+    font-size: $normal;
+  }
+
+  .span-4hrs{
+    background-color: $erp-gray-300;
+    border-radius: 15px;
+    font-size: $small-2;
+  }
+
+  .span-done{
+    background-color: $success-300;
+    }
+
+  .span-in-progress{
+    background-color: $warning-200;
+  }
+
+  .span-staged-testing{
+    background-color: $pink-400;
+  }
+
+  .span-for-review{
+    background-color: $primary-400;
+  }
+
+  .circle-color-blue,
+  .circle-color-green,
+  .circle-color-teal,
+  .circle-color-pink
+  {
+    display: flex;
+    align-items: center;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+
+  .span-dealroom,
+  .span-homekey,
+  .span-dataconnect,
+  .span-emulat
+  {
+    margin-left: 14px;
+    font-size: $small-2;
+  }
+
+  .circle-color-blue{
+    background-color: #2e90fa;
+  }
+
+  .span-dealroom{
+    color: #175cd3;
+    background-color: #eff8ff;
+  }
+
+  .circle-color-green{
+    background-color: #66c61c;
+  }
+
+  .span-homekey{
+    background-color: #f3fee7;
+    color: #3b7c0f;
+  }
+
+  .circle-color-teal{
+    background-color: #15b79e;
+  }
+
+  .span-dataconnect{
+    background-color: #f0fdf9;
+    color: #107569;
+  }
+
+  .circle-color-pink{
+    background-color: #f596d9;
+  }
+
+  .span-emulat{
+    background-color: #fdf2fa;
+    color: #c31e79;
+  }
+
+}
