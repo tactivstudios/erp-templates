@@ -1,0 +1,109 @@
+body{
+    min-height: 100vh;
+}
+nav{
+    font-family: $F1-Regular;
+    display: flex;
+    height: 72px;
+
+
+    .nav-links{
+        display: flex;
+        padding-left: 32px;
+        img{
+            padding-right: 2rem;
+        }
+    }
+
+    img{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    ul{
+        display: flex;
+        color: $erp-gray-700;
+
+        li{
+            padding-inline: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    ul li:hover{
+        background-color: $primary-50;
+        color: $primary-700;
+    }
+
+    .search, .settings, .bell{
+        border: none;
+        background-color: transparent;
+    }
+
+    // .avatar{
+    //     background-image: url("./erp-templates/assets/images/icons/Avatar.png");
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    //     width: 40px;
+    //     height: 40px;
+    //     border-radius: 50%;
+    //     appearance: none;
+    // }
+
+    .projects{
+        color: $erp-gray-700;
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav-btn{
+        padding-right: 32px;
+        button{
+            padding-inline: 10px;
+        }
+    }
+
+    .profile{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+}
+.divider{
+    height: 2px;
+    background-color: $erp-gray-200;
+}
+
+.navbar-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 32px;
+    font-size: $F1-Medium ;
+
+    .nav-menu{
+
+        ul li{
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;      
+        }
+
+        ul li:hover{
+            background-color: $primary-50;
+            color: $primary-700;
+        }
+    }
+}
+
+.divider-2{
+    height: 1px;
+    background-color: $erp-gray-200;
+}
